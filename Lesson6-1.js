@@ -8,7 +8,7 @@ module.exports = function (directory, extension, callback) {
 		}
 		for (i = 0; i < files.length; i += 1) {
 			var currentFile = files[i];
-			if (path.extname(currentFile) === extension) {
+			if (path.extname(currentFile) === "." + extension) {
 				callback(null, currentFile)
 			}
 		}
